@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="row">
+    <div class="col-sm-4">
+        <form action = "/predict" method = "post" enctype="multipart/form-data">
+            <label> Upload a audio file to test the model </label>
+            <input class="form-control" class="form-control-file" type="file" name="file" />
+            <br>
+            <input type = "submit" value="Upload" class="btn btn-primary" />
+        </form>
+    </div>
+</div>
+
+{% endblock %}
